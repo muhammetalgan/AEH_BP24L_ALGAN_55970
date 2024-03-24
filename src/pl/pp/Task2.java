@@ -40,7 +40,7 @@ public class Task2 {
                     num1 = Double.parseDouble(scanner.nextLine());
                     break;
                 } catch (NumberFormatException e) {
-                    System.out.print("Invalid input. Please enter a number: ");
+                    System.out.print("Invalid input. Please enter (valid input) a number: ");
                 }
             }
 
@@ -50,7 +50,7 @@ public class Task2 {
                     num2 = Double.parseDouble(scanner.nextLine());
                     break;
                 } catch (NumberFormatException e) {
-                    System.out.print("Invalid input. Please enter a number: ");
+                    System.out.print("Invalid input. Please enter (valid input) a number: ");
                 }
             }
 
@@ -69,7 +69,7 @@ public class Task2 {
                     if (num2 != 0) {
                         result = num1 / num2;
                     } else {
-                        System.out.println("Error: Division by zero!");
+                        System.out.println("Logicall Error: Division by zero!");
                         continue;
                     }
                     break;
