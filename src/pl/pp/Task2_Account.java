@@ -1,11 +1,11 @@
 package pl.pp;
+
 public class Task2_Account {
     private String accountNumber;
     private double balance;
     private String ownerName;
     private String email;
     private String phoneNumber;
-
 
     public Task2_Account(String accountNumber, double balance, String ownerName, String email, String phoneNumber) {
         this.accountNumber = accountNumber;
@@ -14,7 +14,6 @@ public class Task2_Account {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
-
 
     public String getAccountNumber() {
         return accountNumber;
@@ -56,19 +55,17 @@ public class Task2_Account {
         this.phoneNumber = phoneNumber;
     }
 
-
     public void credit(double amount) {
         balance += amount;
-        System.out.println("Deposit of PLN " + amount + " was made. New balance: PLN " + balance);
+        System.out.println("Account Holder: " + ownerName + ", Account Number: " + accountNumber + ". Deposit of PLN " + amount + " was made. New balance: PLN " + balance);
     }
-
 
     public void withdraw(double amount) {
         if (balance >= amount) {
             balance -= amount;
-            System.out.println("Withdrew PLN " + amount + " from the account. Remaining balance: PLN " + balance);
+            System.out.println("Account Holder: " + ownerName + ", Account Number: " + accountNumber + ". Withdrew PLN " + amount + " from the account. Remaining balance: PLN " + balance);
         } else {
-            System.out.println("Insufficient funds. You have PLN " + balance + " in your account.");
+            System.out.println("Account Holder: " + ownerName + ", Account Number: " + accountNumber + ". Insufficient funds. You have PLN " + balance + " in your account.");
         }
     }
 
